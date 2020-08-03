@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render Header correctly with no props 1`] = `
+<Styled(MuiBox)
+  className="App-header sticky top-0 h-16 flex items-center px-6 bg-green-900"
+  component="header"
+>
+  <img
+    alt="logo"
+    className="App-logo h-8"
+    src="logo.png"
+  />
+</Styled(MuiBox)>
+`;
+
+exports[`App should render correctly with no props 1`] = `
+<Styled(MuiBox)
+  className="App-header sticky top-0 h-16 flex items-center px-6 bg-green-900"
+  component="header"
+>
+  <img
+    alt="logo"
+    className="App-logo h-8"
+    src="logo.png"
+  />
+</Styled(MuiBox)>
+`;

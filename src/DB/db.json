@@ -1,0 +1,12 @@
+{
+  "data": {
+    "25cdd218-98cd-4c26-bc91-ef7a9c644ecf": ["Salary", "tracker", 50000],
+    "20c7456f-1820-4e21-82c8-c9b9bd4735de": ["Capital", "tracker", 7000],
+    "96902ba3-6ced-4797-ae28-322826dd9651": ["Interest", "tracker", 6000],
+    "ee051e17-933a-4ae5-ad52-20f662432a23": ["Profit", "tracker", 8000],
+    "24cc5429-c072-4f9b-ad74-2f8d93584c65": ["tracker", "Food", 8000],
+    "f5ebd74a-f8e5-478f-9841-44bc9089ad53": ["tracker", "Entertainment", 3000],
+    "b7308f4d-7a39-497d-94ba-cd055ce2fd34": ["tracker", "Rent", 30000],
+    "4f853052-77f2-49f8-9d1a-e91d4bebef76": ["tracker", "Clothing", 20000]
+  }
+}

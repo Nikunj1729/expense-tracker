@@ -3,26 +3,70 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/enzyme-to-json": "^1.5.3",
+    "@types/i18next": "^13.0.0",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
+    "@types/react": "^16.9.44",
     "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.9",
+    "@types/uuid": "^8.0.0",
+    "axios": "^0.19.2",
+    "concurrently": "^5.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
+    "eslint": "^6.6.0",
+    "http-proxy-middleware": "^1.0.5",
+    "i18next": "^19.6.3",
+    "i18next-browser-languagedetector": "^5.0.0",
+    "i18next-chained-backend": "^2.0.1",
+    "i18next-http-backend": "^1.0.17",
+    "i18next-locize-backend": "^4.1.1",
+    "i18next-xhr-backend": "^3.2.2",
+    "json-server": "^0.16.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-google-charts": "^3.0.15",
+    "react-i18next": "^11.7.0",
+    "react-redux": "^7.2.1",
     "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "react-test-renderer": "^16.13.1",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "tailwindcss": "^1.6.0",
+    "typescript": "~3.7.2",
+    "uuid": "^8.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"yarn run json-server\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "json-server": "json-server --watch src/DB/db.json --port 5000"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.ts",
+      "!src/index.js"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
   },
   "browserslist": {
     "production": [
