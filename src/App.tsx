@@ -18,7 +18,7 @@ const MyComponent = (props: any) => {
   const [initState, setInitState] = useState({ transactions: {} });
 
   useEffect(() => {
-    axios.get('/data')
+    axios.get(`${process.env.REACT_APP_API_URL}/data`)
       .then(res => {
         setLoading(false);
         setInitState({ transactions: res.data });
