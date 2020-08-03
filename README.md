@@ -46,4 +46,4 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Live Demo 
 
 https://expense-tracker.nikunj1729.vercel.app/ <br />
-https://expense-tracker.nikunj1729.vercel.app/
+https://nikunj-expense-tracker.netlify.app
