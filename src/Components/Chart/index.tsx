@@ -21,7 +21,7 @@ const FlowChart = (props: any) => {
   const reportModified: any = {};
   Object.keys(report).map((key: string) => {
     reportModified[key] = [t(report[key][0]), t(report[key][1]), report[key][2]];
-    data.push(reportModified[key]);
+    return data.push(reportModified[key]);
   })
 
   const handleChange = (value: string) => {
